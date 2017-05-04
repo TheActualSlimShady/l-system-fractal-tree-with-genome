@@ -5,6 +5,10 @@ def drawTree(t, g):
 	leafHeadings = []
 	leafDistances = []
 	leafCount = 0
+	distance = g.Tree.baseDistance
+	width = g.Tree.baseWidth
+	string = lSystem(g)
+	saveLevels = findLevels(string)
 	h = 0
 	passes = len(string)
 	while(h < passes):
@@ -24,5 +28,6 @@ def drawTree(t, g):
 		elif(string[h] == '+'):
 			t.right(g.Tree.angle2)
 		elif(string[h] == '['):
-
+			##color
+			
 		elif(string[h] == ']'):
