@@ -1,0 +1,28 @@
+def drawTree(t, g):
+	positions = []
+	headings = []
+	leafPositions = []
+	leafHeadings = []
+	leafDistances = []
+	leafCount = 0
+	h = 0
+	passes = len(string)
+	while(h < passes):
+		if(string[h] == 'F'):
+			t.forward(distance)
+		elif(string[h] == 'L'):
+			leafPositions.append(t.pos())
+			leafHeadings.append(t.heading())
+			leafDistances.append(distance)
+			leafCount += 1
+		elif(string[h] == '<'):
+			t.left(g.Tree.angle1)
+		elif(string[h] == '>'):
+			t.right(g.Tree.angle1)
+		elif(string[h] == '-'):
+			t.left(g.Tree.angle2)
+		elif(string[h] == '+'):
+			t.right(g.Tree.angle2)
+		elif(string[h] == '['):
+
+		elif(string[h] == ']'):
